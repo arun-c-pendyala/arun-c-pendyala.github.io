@@ -22,7 +22,7 @@
         border-radius: 25px;
     }
 
-    .label-warning{
+    .label-proficient{
     	background-color:#00e676 ;
         border-color: #263238;
         border-radius: 50px;
@@ -53,6 +53,13 @@
     #About , #Contact , #Education {
       margin-bottom: 0;
       background-color: #e0f7fa ;
+    }
+
+    .btn-img{
+
+      margin-bottom: 0;
+      background-color: #80deea ;
+
     }
 
    
@@ -118,16 +125,16 @@
 
     <!-- Proficient -->
  	<p class="label label-primary label-xs"> Proficient </p><br><br>
- 	<p class="label label-warning label-sm "><span class="text-sm text-gray" >Java </span></p>
- 	<p class="label label-warning label-sm"><span class="text-sm text-gray" >Python </span></p>
- 	<p class="label label-warning label-sm"><span class="text-sm text-gray" > R </span></p>
- 	<p class="label label-warning label-sm"><span class="text-sm text-gray" > Rshiny </span></p>
- 	<p class="label label-warning label-sm"><span class="text-sm text-gray" > SQL </span></p>
- 	<p class="label label-warning label-sm"><span class="text-sm text-gray" > Git </span></p>
- 	<p class="label label-warning label-sm"><span class="text-sm text-gray" > C </span></p>
- 	<p class="label label-warning label-sm"><span class="text-sm text-gray" > Apache Solr </span></p>
- 	<p class="label label-warning label-sm"><span class="text-sm text-gray" > Hadoop MapReduce </span></p>
-	<p class="label label-warning label-sm"><span class="text-sm text-gray" > Apache Spark</span></p> 
+ 	<p class="label label-proficient label-sm "><span class="text-sm text-gray" >Java </span></p>
+ 	<p class="label label-proficient label-sm"><span class="text-sm text-gray" >Python </span></p>
+ 	<p class="label label-proficient label-sm"><span class="text-sm text-gray" > R </span></p>
+ 	<p class="label label-proficient label-sm"><span class="text-sm text-gray" > Rshiny </span></p>
+ 	<p class="label label-proficient label-sm"><span class="text-sm text-gray" > SQL </span></p>
+ 	<p class="label label-proficient label-sm"><span class="text-sm text-gray" > Git </span></p>
+ 	<p class="label label-proficient label-sm"><span class="text-sm text-gray" > C </span></p>
+ 	<p class="label label-proficient label-sm"><span class="text-sm text-gray" > Apache Solr </span></p>
+ 	<p class="label label-proficient label-sm"><span class="text-sm text-gray" > Hadoop MapReduce </span></p>
+	<p class="label label-proficient label-sm"><span class="text-sm text-gray" > Apache Spark</span></p> 
 	<br><br>
 	
 	<!-- Familiar -->
@@ -156,13 +163,13 @@
         <h4 class="text-primary"><strong>State University of New York at Buffalo</strong></h4>
         <img src="http://arrow-sheetmetal.com/wp-content/uploads/2012/09/UB2-1000.jpg" class="img-responsive" style="width:100%" alt="Image">
         <h5 class="text-info"><strong> Masters of Science in Computer Science and Engineering - <span class="label label-success label-lg">GPA : 3.7/4.0 </span></strong></h5>
-        <h5><strong> <span class="label label-info label-lg">Graduation Date - Feb, 2018 </span> </strong></h5>
+        <h5><strong> <span class="label label-warning label-lg">Graduation Date - Feb, 2018 </span> </strong></h5>
       </div>
       <div class="col-sm-6"> 
         <h4 class="text-primary"><strong>VIT University, Vellore</strong></h4>
         <img src="http://www.fuccha.in/uploads/post/vit.jpg" class="img-responsive" style="width:100%" alt="Image">
         <h5 class="text-info"><strong> Bachelors of Technology in Electronics and Communication Engineering - <span class="label label-success label-lg">GPA : 9.51/10.0 </span></strong></h5>
-        <h5><strong><span class="label label-info label-lg">Graduation Date - May, 2016 </span> </strong></h5>
+        <h5><strong><span class="label label-warning label-lg">Graduation Date - May, 2016 </span> </strong></h5>
       </div>
     </div>
   </div>
@@ -178,9 +185,45 @@
   <div class="row">
     <div class="col-sm-3">
       <h4 class="text-primary"><strong>Twoogle – Cross Lingual Information Retrieval System</strong></h4>
-      <a href = "project_desc.html#proj1" target ="_blank">
+      <a href="#proj2Modal"   data-toggle = "modal" data-target ="#proj1Modal">
       	<img class="img-thumbnail" src="https://drive.google.com/uc?id=1rszvs5jLmC0rK954xTExL2-8i46L73-i" class="img-responsive" style="width:100%" alt="twoogle">
       </a>
+
+      <!-- Modal for project 1-->
+
+      <div class="modal fade" id="proj1Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="exampleModalLabel"><strong>Twoogle – Cross Lingual Information Retrieval System</strong> 
+                <p>
+                  <span class="badge badge-info"> Apache Solr </span>
+                  <span class="badge badge-info"> HTML</span>
+                  <span class="badge badge-info"> CSS </span>
+                  <span class="badge badge-info"> JavaScript </span>
+                  <span class="badge badge-info"> PHP </span>
+                </p>
+              </h4>
+            </div>
+            <div class="modal-body text-left">
+              <ul style="list-style-type:disc">
+                <li> The data, which is crawled from Twitter using Search API in 5 different languages, is processed using python script to extract required information and add location information to processed JSON files using Maps API</li>
+                <li>The processed tweet collection is then indexed in Solr</li>
+                <li>The user can query in a language and expect to obtain results in other languages which is realized through Microsoft Translator API</li>
+                <li>The analysis of returned tweets was also implemented in UI corresponding to languages, locations, sentiment analysis and top hashtags.</li>
+              </ul> <br>
+              <div class="container-fluid text-center">
+                <a target="_blank" href="https://www.youtube.com/watch?v=awYW5DhT9zE" ><i class="fa fa-youtube fa-5x" aria-hidden="true"></i></a>
+              </div>
+            </div>
+            <div class="modal-footer ">
+              <button type="button" class="btn btn-danger center-block" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
        
       <p>
         <span class="badge badge-info"> Apache Solr </span>
@@ -192,9 +235,41 @@
     </div>
     <div class="col-sm-3">
       <h4 class="text-primary"><strong>Amazon Dynamo-style Replicated Key-Value Storage</strong></h4>
-      <a href = "project_desc.html#proj2" target ="_blank">
+      <a href="#proj2Modal"   data-toggle = "modal" data-target ="#proj2Modal">
       	<img class="img-thumbnail" src="https://listingdock.com/pics/126-18gHrn1391459324.png" class="img-responsive" style="width:100%" alt="twoogle">
       </a>
+
+      <!-- Modal for project 2-->
+
+      <div class="modal fade" id="proj2Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="exampleModalLabel"><strong>Amazon Dynamo-style Replicated Key-Value Storage</strong> 
+                <p>
+                  <span class="badge badge-info"> Java </span>
+                  <span class="badge badge-info"> Android </span>
+                </p>
+              </h4>
+            </div>
+            <div class="modal-body text-left">
+              <ul style="list-style-type:disc">
+                <li>Implemented a simplified version of Amazon DynamoDB which stores key-value pairs in its partitioned nodes</li>
+                <li>Most recent data-writes were returned (and not stale data copies) even under the failure of nodes in the system</li>
+                <li>Data consistency was provided even in the presence of concurrent reads and writes and failure of nodes.</li>
+                <li>The node failure tolerance was a achieved by replicating data in other alive nodes which were next to failed node in the chord ring.</li>
+              </ul> <br>
+              <div class="container-fluid text-center">
+                <a target="_blank" href="https://github.com/arun-c-pendyala/Distributed-Systems/tree/master/PA4" ><i class="fa fa-github fa-5x" aria-hidden="true"></i></a>
+              </div>
+            </div>
+            <div class="modal-footer ">
+              <button type="button" class="btn btn-danger center-block" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <p>
         <span class="badge badge-info"> Java </span>
         <span class="badge badge-info"> Android </span>
@@ -202,9 +277,41 @@
     </div>
     <div class="col-sm-3">
       <h4 class="text-primary"><strong>Large scale Text processing with Hadoop Map Reduce and Apache Spark</strong></h4>
-      <a href = "project_desc.html#proj3" target ="_blank">
+      <a href="#proj3Modal"   data-toggle = "modal" data-target ="#proj3Modal">
       	<img class="img-thumbnail" src="http://aptuz.com/static/media/uploads/blog/spark_and_hadoop.png" class="img-responsive" style="width:100%" alt="text">
       </a>
+
+      <!-- Modal for project 3-->
+
+      <div class="modal fade" id="proj3Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="exampleModalLabel"><strong>Large scale Text processing with Hadoop Map Reduce and Apache Spark</strong> 
+                <p>
+                  <span class="badge badge-info"> Java </span>
+                  <span class="badge badge-info"> Python </span>
+                </p>
+              </h4>
+            </div>
+            <div class="modal-body text-left">
+              <ul style="list-style-type:disc">
+                <li>The goal was to find the word count and perform Inverted indexing of each word in the classical Latin text files provided by the researchers of Classics Department at UB.</li>
+                <li>Also found the 3- Gram and 2- Gram co-occurrences of words. The performance (running time) was compared by increasing the number of files used for processing from 2 to 150.</li>
+                <li>The task was completed by two ways - Hadoop Map reduce (Java) and Apache Spark (Pyspark in Python). It was clear that the latter method fetched faster results.</li>
+              </ul> <br>
+              <div class="container-fluid text-center">
+                <a target="_blank" href="https://github.com/arun-c-pendyala/Data-Intensive-Computing#data-intensive-computing" ><i class="fa fa-github fa-5x" aria-hidden="true"></i></a>
+              </div>
+            </div>
+            <div class="modal-footer ">
+              <button type="button" class="btn btn-danger center-block" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
       <p>
         <span class="badge badge-info"> Java </span>
         <span class="badge badge-info"> Python </span>
@@ -212,10 +319,42 @@
     </div>
     <div class="col-sm-3"> 
       <h4 class="text-primary"><strong>Handwritten Digits Recognition using Logistic Regression and Neural Networks</strong></h4>
-      <a href= "project_desc#proj4" target = "_blank">
+      <a href="#proj4Modal"   data-toggle = "modal" data-target ="#proj4Modal">
       	<img class="img-thumbnail" src="http://myselph.de/mnistExamples.png" class="img-responsive" style="width:100%" alt="Digit">
       </a>
-      <p><span class="badge badge-info"> Python </span></p>
+
+      <!-- Modal for project 4-->
+
+      <div class="modal fade" id="proj4Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="exampleModalLabel"><strong>Handwritten Digits Recognition using Logistic Regression and Neural Networks</strong> 
+                <p>
+                  <span class="badge badge-info"> Python</span>
+                  <span class="badge badge-info"> NumPy </span>
+                </p>
+              </h4>
+            </div>
+            <div class="modal-body text-left">
+              <ul style="list-style-type:disc">
+                <li>Implemented the classification of 28 x 28 grayscale handwritten digit images in MNIST data set using various models such as Logistic Regression, Single hidden layer Neural network using Feed Forward and Backpropagation algorithm and Convolutional Neural Network in Python. These models were also tested on USPS dataset.</li>
+                <li>Obtained testing accuracy of 91.3%, 90.8% and 98.6% for Logistic regression Single hidden layer Neural Network and Convolutional Neural Network respectively.</li>
+                <li>Size of MNIST and USPS dataset – 55 MB and 97 MB.</li>
+                
+              </ul> <br>
+              <div class="container-fluid text-center">
+                <a target="_blank" href="https://github.com/arun-c-pendyala/Machine-Learning/tree/master/Proj3code" ><i class="fa fa-github fa-5x" aria-hidden="true"></i></a>
+              </div>
+            </div>
+            <div class="modal-footer ">
+              <button type="button" class="btn btn-danger center-block" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p><span class="badge badge-info"> Python </span> <span class="badge badge-info"> NumPy </span></p>
     </div>
   </div>
 </div>
@@ -241,7 +380,7 @@
 
 
 <footer class="container-fluid text-center">
-  <p> Designed by <a href = "#">Arun C Pendyala </a>.  <br> Special Thanks to <a href="https://www.w3schools.com/" > W3Schools.com</a></p>
+  <p> Designed with ❤️ by <a href = "#">Arun C Pendyala </a>.  <br> Special Thanks to <a href="https://www.w3schools.com/" > W3Schools.com</a></p>
 </footer>
 
 </body>
